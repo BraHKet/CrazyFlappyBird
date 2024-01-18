@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.pagina { 
+  width: 100%;
+  height: 100vh; 
+
+  /*background-color: aquamarine;*/
+  background-image: url("paesaggio1.jpg");
+  background-size:contain;
+  background-position-x: 0cm;
+}
+
+.ostacoloSopra {
+  width: 10%;
+  height: 40%;
+  
+  background-image: url("pipe1.png");
+  background-size: 100% 100%;
+  transform: scaleY(-1); /* Capovolgi verticalmente l'immagine */
+  position: absolute;
+}
+
+.ostacoloSotto {
+  width: 10%;
+  height: 40%;
+  
+  background-image: url("pipe1.png");
+  background-size: 100% 100%;
+
+  position: absolute;
+  bottom:0;
+  
+}
+
+.bird {
+  width: 10%;
+  height: 15%;
+
+  position: absolute;
+  background-image: url("uccello.png");
+  background-size: 100% 100%;
+  transform: scaleX(-1);
+
+  margin-left: 10%;
+}
+
+.jump {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  background-color: transparent;
+}
